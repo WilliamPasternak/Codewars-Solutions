@@ -1,4 +1,5 @@
 //8 KYU Grasshopper - Summation 
+//8 KYU Grasshopper - Summation 
 
 var summation = function (num) {
   let sum = 0;
