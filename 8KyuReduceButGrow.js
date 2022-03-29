@@ -1,10 +1,11 @@
 /*
-8 kyu
+3/29
+8 kyu 
 Beginner - Reduce but Grow
 Given a non-empty array of integers, return the result of multiplying the values together in order. 
 */
 
 
-function grow(x){
+function grow(x){ 
   return x.reduce((prev,cur) => prev * cur,1)
 }
