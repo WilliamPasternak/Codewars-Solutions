@@ -9,10 +9,10 @@ function peopleWithAgeDrink(old) {
   if(old<14){
     drink = "toddy"
   }
-  else if(old > 14 && old <18){
+  else if(old >= 14 && old <18){
     drink = "coke"
   }
-  else if(old > 18 && old < 21){
+  else if(old >= 18 && old < 21){
     drink = "beer"
   }
   else {
