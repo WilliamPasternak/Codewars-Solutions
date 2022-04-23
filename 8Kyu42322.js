@@ -42,3 +42,9 @@ function remainder(n, m){
   return n > m ? n % m : m % n  
 }
 
+/* 8 kyu
+Swap Values*/
+function swapValues(arr) {
+    return arr.reverse()
+}
+
