@@ -36,3 +36,9 @@ function findMultiples(integer, limit) {
  
 }
 
+/* 8 kyu
+Find the Remainder*/
+function remainder(n, m){
+  return n > m ? n % m : m % n  
+}
+
