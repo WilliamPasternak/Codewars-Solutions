@@ -1,3 +1,5 @@
+//Enumerable Magic #25 - Take the First N Elements
+
 function take(arr, n) {
   const newArr = []
   if(arr.length === 0){
@@ -15,5 +17,10 @@ function take(arr, n) {
       }
       return newArr
     }
-  
 }
+
+
+function apple(x){
+  return x * x > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox."
+}
+
