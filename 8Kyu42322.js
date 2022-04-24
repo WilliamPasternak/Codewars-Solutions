@@ -55,3 +55,21 @@ function plural(n) {
  return n === 1 ? false : true
 }
 
+/*8 kyu
+Surface Area and Volume of a Box*/
+function getSize(width, height, depth){
+  let totals = []
+  
+  // width = 4 , H = 2 , l = 6
+    //A=2(wl+hl+hw)
+  // A = 2·(4·6+ 2·6+2·4)=88
+  //2 * ((l * h) + (w * h) + (l * w))
+  let surfaceArea = 2 * ((depth * height) + (width * height) + (depth * width))
+
+  let volume = width * height * depth 
+  totals.push(surfaceArea)
+  totals.push(volume)
+  return totals
+}
+
+
