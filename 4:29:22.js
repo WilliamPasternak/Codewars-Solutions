@@ -7,3 +7,9 @@ var name = a + b;
 function solution(a, b){
   return a.length > b.length ? b + a + b : a + b + a
 }
+
+// Count Odd Numbers below n
+function oddCount(n){
+  return Math.floor(n / 2)
+}
+  
