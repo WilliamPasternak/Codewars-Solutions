@@ -28,10 +28,8 @@ function stringy(size) {
 //8 kyu Grasshopper - If/else syntax debug
 
 function checkAlive (health) {
-  if (health > 0) {
-    return true
-  } 
-  else{
-    return false
+  return health > 0
   }
-}
+
+// 8Kyu Get nth even number
+const nthEven = n => (n * 2) -2
