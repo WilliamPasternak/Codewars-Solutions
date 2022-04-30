@@ -33,3 +33,14 @@ function checkAlive (health) {
 
 // 8Kyu Get nth even number
 const nthEven = n => (n * 2) -2
+
+//8 kyu Generate range of integers
+function generateRange(min, max, step){
+let integers = []
+
+for ( let i = min ; i <= max; i += step){
+  integers.push(i)
+}
+  return integers
+}
+
