@@ -9,3 +9,18 @@ function fixTheMeerkat(arr) {
 function divisibleBy(numbers, divisor){
 return numbers.filter(x => x % divisor === 0)
 }
+
+// 8 kyu Stringy Strings
+function stringy(size) {
+  let binary = ''
+  for(let i = 1; i <= size; i++){
+    if(i % 2 === 0){
+      binary += 0
+    }
+    else if(i % 2 != 0){
+       binary += 1
+    }
+   
+  }
+  return binary
+}
