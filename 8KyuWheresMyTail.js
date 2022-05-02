@@ -10,4 +10,18 @@ function correctTail(bod, tail){
     return false
 }
   
- 
+ /* 8Kyu replace vowels w/ ! */
+function replace(s){
+  let letters = s.split('')
+  let vowels = ['a','e','i','o','u','A','E','I','O','U']
+  
+//   for(letter of letters)
+    
+    for(let i = 0; i < letters.length ; i++){
+      if(vowels.includes(letters[i])) {
+      letters[i] = '!' 
+    } 
+  }
+  return letters.join('')
+  }
+  
