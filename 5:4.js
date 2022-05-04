@@ -38,3 +38,16 @@ for(let i = 1; i < n ;i++){
   return solution + startingNum
 }
 
+/* 8KYU */
+function array(arr){ 
+ 
+let stringToArr = arr.split(',')
+let middle = stringToArr.slice(1,-1)
+let solution =  middle.join(' ')
+ if (arr.length <= 0 || solution.length <= 0){
+    return null
+  } 
+  return solution
+
+}
+
