@@ -1,4 +1,4 @@
-# codewars : Codewars Solutions
+# Codewars Solutions
 
 
 
