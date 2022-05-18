@@ -5,6 +5,14 @@ Your task is to write a function that takes a String and returns an Array/list w
 *R: Array with each original word and length as integer as a string
 *E: ("apple band") => ('apple 5','band 4')
 */
+
+// Refactored Code
+function addLength(str){
+  return str.split(' ').map(word => `${word} ${word.length}`)
+}
+
+
+
 function addLength(str) {
   let wordsAndLength = []
   // Split string into each individual word 
@@ -15,3 +23,4 @@ function addLength(str) {
   }
   return wordsAndLength
 }
+
