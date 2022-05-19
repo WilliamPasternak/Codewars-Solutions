@@ -3,7 +3,6 @@ A repository filled with my Codewars challenge solutions. I have completed over 
 
 <img align="center" src="https://github.com/WilliamPasternak/Codewars-Solutions/blob/master/CW%20Status.png" alt="Graph Showing Codewars challenge progress">
 
-
 ## How It's Made:
 
 **Tech used:** <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
