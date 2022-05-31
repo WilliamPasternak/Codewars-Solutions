@@ -10,3 +10,13 @@ function tripleTrouble(one, two, three){
   }
   return message
  }
+
+// Refactored Code
+function tripleTrouble(one, two, three){
+ let message = ""
+  for(let i = 0; i < one.length ; i++){
+    message += one.charAt(i) + two.charAt(i) + three.charAt(i);
+  }
+  return message
+ }
+
