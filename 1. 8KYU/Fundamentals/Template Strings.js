@@ -1,0 +1,4 @@
+Template Strings
+let TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`
+}
