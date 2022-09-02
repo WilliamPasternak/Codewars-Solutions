@@ -1,15 +1,15 @@
 function solve(arr){  
   const alphabet = 'abcdefghijklmnopqrstuvwxyz'
   
-  let final = []
+  let arrayOfCorrectPosition = []
   for (let i = 0; i < arr.length; i++) {
-    let count = 0;
+    let countOfCorrectPosition = 0
     for (let j = 0; j < arr[i].length; j++) {
       if (arr[i][j].toLowerCase() === alphabet[j]) {
-        count++;
+        countOfCorrectPosition++;
       }
     }
-    final.push(count); 
+    arrayOfCorrectPosition.push(countOfCorrectPosition); 
   }
-  return final
+  return arrayOfCorrectPosition
 };
