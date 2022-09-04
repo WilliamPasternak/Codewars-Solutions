@@ -1,7 +1,7 @@
 # Codewars Solutions
 A repository filled with my Codewars challenge solutions. I have completed over 300 challenges and push at least one solution daily to keep my skills sharp. The solutions are organized in folders by challenge difficulty from 8 Kyu (easiest) to 1 Kyu (hardest)
 
-<img align="center" src="https://github.com/WilliamPasternak/Codewars-Solutions/blob/master/CodeWars%20Status.png" alt="Graph Showing Codewars challenge progress">
+<img align="center" src="https://github.com/WilliamPasternak/Codewars-Solutions/blob/master/CodeWars%20Progress.png" alt="Graph Showing Codewars challenge progress">
 
 ## How It's Made:
 
