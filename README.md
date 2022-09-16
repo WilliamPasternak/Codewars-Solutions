@@ -13,9 +13,29 @@ Refactor code when new better solutions are found.
 ## Lessons Learned:
 Not being able to answer a question is okay, as long as you learn how to solve it next time and take the initiative to improve.
 
-## Examples:
-Other coding challenge repos.
-
-**Grind75:** https://github.com/WilliamPasternak/LeetCode/tree/main/Grind75
-
-**LeetCode Patterns:** https://github.com/WilliamPasternak/LeetCode/tree/main/LeetCode-Patterns
+## More Projects
+<table bordercolor="#66b2b2">
+  <tr>
+    <td width="33.3%"  style="align:center;" valign="top">
+<a target="_blank" href="https://github.com/WilliamPasternak/busboy">Busboy Site</a>
+        <br />
+      <a target="_blank" href="https://github.com/WilliamPasternak/busboy">
+            <img src="https://github.com/WilliamPasternak/busboy/blob/main/busyboy.gif" width="100%"  alt="Busbo.co"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+<a target="_blank" href="https://github.com/WilliamPasternak/Dilution-Calculator">Dilution Calculator Web App</a> 
+      <br />
+        <a target="_blank" href="https://github.com/WilliamPasternak/Dilution-Calculator">
+          <img src="https://github.com/WilliamPasternak/Dilution-Calculator/raw/main/Dilution.gif" width="100%" alt="Matching Card Game"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+<a target="_blank" href="https://github.com/WilliamPasternak/MovieNight">Movie Night Web App</a>
+        <br />
+        <a target="_blank" href="https://github.com/WilliamPasternak/MovieNight">
+          <img src="https://github.com/WilliamPasternak/MovieNight/blob/main/MovieNight%20Walkthrough.gif" width="100%" alt="Portfolio"/>
+        </a>
+    </td>
+  </tr>
+</table>
