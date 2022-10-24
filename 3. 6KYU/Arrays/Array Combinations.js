@@ -1,3 +1,4 @@
+//Original
 function solve(arr) {
 let uniqueNums = arr.map(array => new Set(array))
 let currentTotal =  1;  
@@ -6,3 +7,12 @@ let currentTotal =  1;
   }
   return currentTotal
 };
+
+//Refactored 
+function solve(arr) {
+let uniqueNums = arr.map(array => new Set(array).size)
+return uniqueNums.reduce((acc,cur)=> acc * cur)
+};
+
+// One liner with ES6
+const solve = arr => arr.map(array => new Set(array).size).reduce((acc,cur) => acc * cur)
