@@ -2,7 +2,6 @@ Challenge: Sort the Odd
 Difficulty: 6KYU
 Description: You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
 
-
 // Original Solution
 function sortArray(array) {
   const arrayCopy = [...array]
