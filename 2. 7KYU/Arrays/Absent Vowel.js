@@ -16,6 +16,24 @@ function absentVowel(x){
   }
 }
 
+function absentVowel(x){
+  let letters = x.split('')
+  let lettersUsed = {a: 0, e: 0, i:0, o: 0, u: 0}
+  let vowels ={a: 0, e: 1, i: 2, o: 3, u:4}
+
+  for(let char of letters){
+     if(char in lettersUsed){
+         lettersUsed[char]++
+       }
+  }
+  
+  let unusedVowel = Object.keys(lettersUsed).find(letter => lettersUsed[letter] === 0)
+
+  return vowels[unusedVowel]
+
+}
+
+
 
 // Tests:
 console.log(absentVowel("John Doe hs seven red pples under his bsket"), '0')
