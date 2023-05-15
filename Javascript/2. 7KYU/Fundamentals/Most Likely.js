@@ -4,13 +4,8 @@ Create a function which compares two probabilities, returning true if the first 
 
 function mostLikely(prob1,prob2){
   // Get Numerator and Denomenator from strings
-  prob1 = prob1.split(':')
-  prob2 = prob2.split(':')
-  
-  // Calculate Quotient
-  let prob1Likelyhood = prob1[0] / prob1[1]
-  let prob2likelyhood = prob2[0] / prob2[1]
-  
-  // Compare Quotients and return highest value
-  return prob1Likelyhood > prob2likelyhood ? true : false 
+  const [numerator1,denominator1] = prob1.split(':')
+  const [numerator2,denominator2] = prob2.split(':')
+  // Calculate and compare Quotients
+  return (numerator1 / denominator1) > (numerator2 / denominator2)
 }
