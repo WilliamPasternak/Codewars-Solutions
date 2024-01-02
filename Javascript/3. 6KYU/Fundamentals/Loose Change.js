@@ -1,5 +1,5 @@
 /*
- * Challenge: Loose Change 
+ * Challenge: Loose Change
  * Source: https://www.codewars.com/kata/5571f712ddf00b54420000ee/train/javascript
  * Description: Create a function that takes an amount of US currency in cents, 
  * and returns a dictionary which shows the least amount of coins used to make up that amount. 
