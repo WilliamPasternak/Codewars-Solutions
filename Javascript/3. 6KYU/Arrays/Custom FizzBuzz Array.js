@@ -1,4 +1,8 @@
 /**
+ * Challenge: Custom FizzBuzz Array (6KYU)
+ * Source: https://www.codewars.com/kata/5355a811a93a501adf000ab7/javascript
+ * Description: Write a function that returns a (custom) FizzBuzz sequence of the numbers 1 to 100.
+/**
  * Customizable FizzBuzz implementation.
  * @param {string} stringOne - The string to replace multiples of numOne.
  * @param {string} stringTwo - The string to replace multiples of numTwo.
@@ -17,27 +21,26 @@ function fizzBuzzCustom(stringOne = 'Fizz', stringTwo = 'Buzz', numOne = 3, numT
   // Create an array to hold results.
   const resultsArray = []
   
-  for(let i = 1; i <= range; i++){
-    const currentNumber = i
-   // i divisible by numOne & numTwo.
-   if (currentNumber % (numOne * numTwo) === 0){
-     resultsArray.push(`${stringOne}${stringTwo}`)
-   }
-    // i divisible by numOne only.
-    else if(currentNumber % numOne === 0){
-      resultsArray.push(stringOne)
-    }
-    // i divisible by numTwo only.
-    else if(currentNumber % numTwo === 0){
-      resultsArray.push(stringTwo)
-    }
-    // i not divisible by numOne or numTwo
-    else{
-      resultsArray.push(currentNumber)
+  // Iterate through the range of numbers.
+  for (let i = 1; i <= range; i++) {
+    // Alias for currentNumber for clarity.
+    const currentNumber = i;
+
+    // Determine replacement for the current number based on divisibility.
+    if (currentNumber % (numOne * numTwo) === 0) {
+      // Divisible by both numOne and numTwo.
+      resultsArray.push(`${stringOne}${stringTwo}`);
+    } else if (currentNumber % numOne === 0) {
+      // Divisible by numOne only.
+      resultsArray.push(stringOne);
+    } else if (currentNumber % numTwo === 0) {
+      // Divisible by numTwo only.
+      resultsArray.push(stringTwo);
+    } else {
+      // Not divisible by numOne or numTwo.
+      resultsArray.push(currentNumber);
     }
   }
-  return resultsArray
-}
 
 // Tests:
 console.log(fizzBuzzCustom()[15],16)                        
