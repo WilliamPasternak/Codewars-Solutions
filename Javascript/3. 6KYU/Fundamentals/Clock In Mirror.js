@@ -1,9 +1,15 @@
 /*
+ * Challenge: Clock In Mirror
+ * Source: https://www.codewars.com/kata/56548dad6dae7b8756000037
+ * Description: Complete the function WhatIsTheTime(timeInMirror), where timeInMirror is the mirrored time as string. 
+ * Return the real time as a string.
+/*
+
+/*
 Converts 'timeInMirror' to actual time.
 @param {string}  timeInMirror - Starting time seen on a clock in a mirror. 
 @returns {string} mirroredTime - Actual time on clock.
 */
-
 function WhatIsTheTime(timeInMirror) {
   // Extract hours and minutes as numbers
   const [hours, min] = timeInMirror.split(':').map(Number)
