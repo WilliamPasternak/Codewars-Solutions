@@ -11,16 +11,13 @@
  */
 
 function findUniq(stringsArray) {
-  // Create an array of the unique chars in each string.
-  let uniqueCharsArray = stringsArray.map((string) => {
+  // Create an array of the unique chars in each string, remove the duplicate characters and join the characters back into a string
+  const uniqueCharsArray = stringsArray.map((string) => {
     let sortedString = string.toLowerCase().split("").sort().join("")
-    // Remove duplicates characters using a Set and join the characters back into a string
     return [...new Set(sortedString)].join('')
   })
   // Find the index of the unique string in the array
-  let uniqueString = uniqueCharsArray.find((char) =>
-    uniqueCharsArray.lastIndexOf(char) === uniqueCharsArray.indexOf(char)
-  );
+  let uniqueString = uniqueCharsArray.find((char) => uniqueCharsArray.lastIndexOf(char) === uniqueCharsArray.indexOf(char))
   let uniqueIndex = uniqueCharsArray.indexOf(uniqueString)
 
   // Return the string 
