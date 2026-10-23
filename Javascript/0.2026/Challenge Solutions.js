@@ -1,3 +1,67 @@
+----------------------------------------------------------------------
+Template: 
+DATE: MM/DD/YY
+
+CHALLENGE NAME:
+[Name of the challenge]
+
+DESCRIPTION:
+[Paste the full challenge instructions here.]
+
+PARAMETERS AND RETURN:
+- Parameters: [Input name and type]
+- Return: [Expected output and type]
+
+EXAMPLES:
+- [Input] → [Expected output]
+- [Input] → [Expected output]
+- [Input] → [Expected output]
+
+SOLUTION:
+
+NOTES:
+- [Key concept learned]
+- [Alternative approach or edge case to remember]
+
+----------------------------------------------------------------------
+DATE: 10/23/26
+
+CHALLENGE NAME: Even or Odd
+
+DESCRIPTION:
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+PARAMETERS AND RETURN:
+- Parameters: num -> Integer
+- Return: "Even or Odd" -> String
+
+EXAMPLES:
+- [8] → "Even"
+- [1] → "Odd"
+- [0] → "Even"
+- [-1] → "Odd"
+- [-2] → "Even"
+
+
+SOLUTION:
+function returnsParity (num){
+  const isEven = num % 2 === 0 
+  return isEven ? "Even" : "Odd"
+}
+
+// Tests
+    console.log(returnsParity(8),  "Even" , 8)
+    console.log(returnsParity(1),  "Odd",   1)
+    console.log(returnsParity(0),  "Even",  0)
+    console.log(returnsParity(-1), "Odd",  -1)
+    console.log(returnsParity(-2), "Even", -2)
+
+NOTES:
+-  Negative integers work without Math.abs() because negative even numbers still have a remainder of 0 when divided by 2. 
+-  Zero is also even. The function can be simplified to return num % 2 === 0 ? "Even" : "Odd" without an intermediate variable.
+
+
+
 6/4/2026
 Vowel Count:
 Return the number (count) of vowels in the given string.
