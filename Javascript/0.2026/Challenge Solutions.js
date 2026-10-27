@@ -16,9 +16,77 @@ EXAMPLES:
 
 SOLUTION:
 
+REFACTOR:
+
 NOTES:
 - [Key concept]
 - [Alternative approach or edge case to remember]
+----------------------------------------------------------------------
+DATE: 10/27/26 
+
+CHALLENGE NAME: Who likes it?
+
+DESCRIPTION: 
+You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. 
+We want to create the text that should be displayed next to such an item.
+Implement the function which takes an array containing the names of people that like an item. 
+It must return the display text as shown in the below examples:
+
+
+PARAMETERS AND RETURN:
+- Parameters: Array (names)
+- Return: String (likesStatement)
+
+EXAMPLES:
+- likes([]), "no one likes this"
+- likes(["Peter"]), "Peter likes this"
+- likes(["Jacob", "Alex"]), "Jacob and Alex like this"
+- likes(["Max", "John", "Mark"]), "Max, John and Mark like this"
+- likes(["Alex", "Jacob", "Mark", "Max"]), "Alex, Jacob and 2 others like this"
+
+ORIGINAL SOLUTION:
+
+// this function takes an array (names) returns a 'likesStatement' representing who if anyonelikes this post.
+function likes(names){
+  // Find length of array 
+  const arrLength = names.length
+
+  // Establish likesStatement 
+  let likesStatement = ""
+
+  // Length determines which template will be used
+  if (arrLength === 0){
+    likesStatement = "no one likes this"
+  } 
+  else if(arrLength === 1){
+    likesStatement = `${names[0]} likes this`
+  }
+  else if (arrLength === 2){
+    likesStatement = `${names[0]} and ${names[1]} like this`
+  }
+  else if (arrLength === 3){
+    likesStatement = `${names[0]}, ${names[1]} and ${names[2]} like this`
+  }
+  else {
+    likesStatement = `${names[0]}, ${names[1]} and ${arrLength - 2} others like this`
+  }
+
+  return likesStatement
+}
+
+REFACTOR:
+ if (arrLength === 0) {
+    return "no one likes this"
+  } else if (arrLength === 1) {
+    return `${names[0]} likes this`
+  } else if (arrLength === 2) {
+    return `${names[0]} and ${names[1]} like this`
+  } else if (arrLength === 3) {
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`
+  } else {
+    return `${names[0]}, ${names[1]} and ${arrLength - 2} others like this`
+  }
+}
 
 ----------------------------------------------------------------------
 DATE: 10/26/26
