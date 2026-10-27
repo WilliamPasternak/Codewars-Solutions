@@ -1,12 +1,9 @@
 ----------------------------------------------------------------------
-Template: 
 DATE: MM/DD/YY
 
 CHALLENGE NAME:
-[Name of the challenge]
 
 DESCRIPTION:
-[Paste the full challenge instructions here.]
 
 PARAMETERS AND RETURN:
 - Parameters: [Input name and type]
@@ -20,8 +17,59 @@ EXAMPLES:
 SOLUTION:
 
 NOTES:
-- [Key concept learned]
+- [Key concept]
 - [Alternative approach or edge case to remember]
+
+----------------------------------------------------------------------
+DATE: 10/26/26
+
+CHALLENGE NAME:
+Vowel Count
+
+DESCRIPTION:
+- Return the number (count) of vowels in the given string.
+- We will consider a, e, i, o, u as vowels for this challenge (but not y).
+- The input string will only consist of lower case letters and/or spaces.
+
+PARAMETERS AND RETURN:
+- Parameters: string (str)
+- Return: number (count)
+
+EXAMPLES:
+- getCount('a'), 1
+- getCount('b'), 0
+- getCount(' '), 0
+- getCount('y'), 0
+- getCount('a e i o u'), 5
+
+SOLUTION:
+
+function getCount(str){
+// create variable to hold current count of vowels.
+  let count = 0
+// establish valid vowels.
+  const vowels = new Set (['a','e','i','o','u'])
+
+// iterate over input string
+  for(let i = 0; i < str.length; i++){
+    const currChar = str[i]
+    // check if character is a vowel
+    if(vowels.has(currChar)){
+      count++
+    }
+   
+  }
+  return count
+}
+
+
+NOTES:
+Alternative approach: 
+- I could have used an Object instead of a Set, 
+- I'd check for vowel with if(Object.hasOwn(vowels, curChar)) {count ++}
+
+Edge cases: 
+The challenge specifies lowercase input, so uppercase handling isn't required but could be.
 
 ----------------------------------------------------------------------
 DATE: 10/23/26
