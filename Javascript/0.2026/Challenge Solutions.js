@@ -16,11 +16,59 @@ EXAMPLES:
 
 SOLUTION:
 
-REFACTOR:
+REFACTOR / Alternative:
 
 NOTES:
 - [Key concept]
 - [Alternative approach or edge case to remember]
+
+----------------------------------------------------------------------
+DATE: 10/29/26
+
+CHALLENGE NAME: Highest and Lowest
+
+DESCRIPTION: In this assignment you are given a string of space separated numbers, 
+and have to return the highest and lowest number. All numbers are valid Int32, no need to validate them.
+There will always be at least one number in the input string.
+Output string must be two numbers separated by a single space, and highest number is first.
+
+PARAMETERS AND RETURN:
+- Parameters: String (numbers)
+- Return: String ("High Number Low Number")
+
+EXAMPLES:
+- highAndLow("1 2 3 4 5"), "5 1" 
+- highAndLow("1 2 -3 4 5"), "5 -3" 
+- highAndLow("1 9 3 4 -5"), "9 -5" 
+
+SOLUTION:
+function highAndLow(numbers){
+  // Ensure each number is correct data type for evaluation
+  const numsArr = numbers.split(' ').map((x) => Number(x))
+  
+  let highest = numsArr[0] 
+  let lowest = numsArr[0] 
+  
+  for(let i = 0; i < numsArr.length; i++) {
+      const currNum = numsArr[i] 
+      if (currNum < lowest) {
+        lowest = currNum 
+      }
+      else if (currNum > highest){
+        highest = currNum
+      }
+  }
+  return `${highest} ${lowest}`
+
+}
+
+
+REFACTOR / Alternative:
+- Could use Math.min  / Math.max to shorten code, but would require looping array twice
+
+NOTES:
+- Convert to numbers before comparing. Split gives array of strings, and Strings compare character by character, so "10" < "9" is true.
+
 ----------------------------------------------------------------------
 DATE: 10/28/26
 
