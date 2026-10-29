@@ -22,6 +22,44 @@ NOTES:
 - [Key concept]
 - [Alternative approach or edge case to remember]
 ----------------------------------------------------------------------
+DATE: 10/28/26
+
+CHALLENGE NAME:Sum of positive
+
+DESCRIPTION: You get an array of numbers, return the sum of all of the positives ones.
+
+
+PARAMETERS AND RETURN:
+- Parameters:  Array (arr)
+- Return: Integer (currTotal)
+
+EXAMPLES:
+- positiveSum([1, 2, 3, 4, 5]), 15  // All positive
+- positiveSum([1, -2, 3, -4, 5]), 9 // Mixed positive and negative
+- positiveSum([]), 0 // Empty array
+- positiveSum([-1, -2, -3]), 0 // No positive numbers
+- positiveSum([0, 0, 0]), 0 // Zeros only
+- positiveSum([5]), 5 //Single positive number
+
+SOLUTION:
+
+function positiveSum(arr) {
+  let currTotal = 0
+
+  for (let i = 0; i < arr.length; i++){
+    const currNum = arr[i]
+
+    if (currNum > 0) {
+      currTotal += currNum
+    }
+  }
+  return currTotal
+}
+
+
+REFACTOR:
+ - Can use Filter & Reduce
+----------------------------------------------------------------------
 DATE: 10/27/26 
 
 CHALLENGE NAME: Who likes it?
