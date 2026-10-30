@@ -14,9 +14,69 @@ EXAMPLES:
 - [Input] → [Expected output]
 - [Input] → [Expected output]
 
-SOLUTION:
+INITIAL SOLUTION:
 
-REFACTOR / Alternative:
+REFACTOR / ALTERNATIVE:
+
+NOTES:
+- [Key concept]
+- [Alternative approach or edge case to remember]
+
+----------------------------------------------------------------------
+DATE: 10/30/26
+
+CHALLENGE NAME: Find the odd int
+
+DESCRIPTION: Given an array of integers, find the one that appears an odd number of times.
+
+There will always be only one integer that appears an odd number of times.
+
+PARAMETERS AND RETURN:
+- Parameters: Array of Integers
+- Return: Number 
+
+EXAMPLES:
+- findOdd([7]),7
+- findOdd([0]),0
+- findOdd([1,1,2]),2
+- findOdd([0,1,0,1,0]),0
+- findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]),4
+
+INITIAL SOLUTION:
+function findOdd(intArr){
+  const integerCount = {}
+  // go through arr, increment count, and/or add new items to obj
+  for (let i = 0; i < intArr.length; i++){
+    const currNum = intArr[i]
+    // If currNum has been seen already, increment. Otherwise add to obj and establish count.
+    if (integerCount[currNum]) {
+      integerCount[currNum]++
+    } else {
+      integerCount[currNum] = 1
+    }
+  }
+  // iterate over obj and find odd 
+  for (let int in integerCount){
+    if(integerCount[int] % 2 !== 0){
+      return Number(int)
+    }
+  }
+}
+
+REFACTOR / ALTERNATIVE:
+function findOdd(intArr) {
+  const integerCount = {}
+
+  for (const currNum of intArr) {
+    integerCount[currNum] = (integerCount[currNum] || 0) + 1
+  }
+
+  for (const [num, count] of Object.entries(integerCount)) {
+    if (count % 2 !== 0) {
+      return Number(num)
+    }
+  }
+}
 
 NOTES:
 - [Key concept]
